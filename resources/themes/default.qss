@@ -1,0 +1,265 @@
+QWidget#bgWidget {
+    border-radius: 5px;
+    border: none;
+    background: transparent url(resources/themes/default/bg.jpg) no-repeat center center;
+}
+
+/*标题icon*/
+QLabel#iconLabel {
+    image: url(resources/icon.ico);
+    padding: 2px;
+}
+
+/*最小化按钮*/
+QPushButton#minButton {
+    image: url(resources/icon_min_button.png);
+    background: transparent;
+    border-style: outset;
+    padding: 5px;
+}
+QPushButton#minButton:hover {
+    image: url(resources/icon_min_button.png);
+    background: rgba(255, 255, 255, 100);
+    border-style: outset;
+    padding: 5px;
+}
+
+/*关闭按钮
+    border-top-right-radius: 5px;
+*/
+QPushButton#closeButton {
+    image: url(resources/icon_close_button.png);
+    background: transparent;
+    border-style: outset;
+    padding: 5px;
+}
+QPushButton#closeButton:hover {
+    image: url(resources/icon_close_button.png);
+    background: #D44027;
+    border-style: outset;
+    padding: 5px;
+}
+
+/*头像*/
+QLabel#headLabel {
+    border-radius: 3px;
+    border: 1px solid gray;
+    image: url(resources/icon.ico);
+}
+QLabel#headLabel:hover {
+    border: 2px solid #31BCFF;
+}
+
+/*昵称*/
+QLabel#nameLabel {
+    background: transparent;
+    font-weight: bold;
+}
+
+/*个性签名*/
+QLineEdit#moodEdit {
+    background: transparent;
+    qproperty-placeholderText: "编辑个性签名";
+}
+QLineEdit#moodEdit:focus {
+    background: rgb(255, 255, 255);
+    border: 1px solid #FFFFFF;
+}
+QLineEdit#moodEdit:hover {
+    border-radius: 2px;
+    border: 1px solid gray;
+}
+
+/*空间按钮*/
+QPushButton#qzoneButton {
+    image: url(resources/icon_qzone.png);
+    background: transparent;
+}
+QPushButton#qzoneButton:hover {
+    border-radius: 2px;
+    border: 1px outset gray;
+}
+QPushButton#qzoneButton:pressed {
+    border-radius: 2px;
+    border: 1px inset gray;
+}
+
+/*皮肤按钮*/
+QPushButton#skinButton {
+    image: url(resources/icon_skin.png);
+    background: transparent;
+}
+QPushButton#skinButton:hover {
+    border-radius: 2px;
+    border: 1px outset gray;
+}
+QPushButton#skinButton:pressed {
+    border-radius: 2px;
+    border: 1px inset gray;
+}
+
+/*天气*/
+QLabel#weatherLabel {
+    image: url(resources/weather/sun.png);
+}
+
+/*
+输入框样式
+选中的文字颜色
+selection-color: white;
+选中的文字背景底色
+selection-background-color: blue;
+*/
+QLineEdit#searchEdit {
+    height: 30px;
+    padding: 0px 0px 0px 5px;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 60) url(resources/search.png) no-repeat center right;
+    qproperty-placeholderText: " 搜索: 联系人";
+}
+/*输入框鼠标悬停样式*/
+QLineEdit#searchEdit:hover {
+    background: rgba(0, 0, 0, 50) url(resources/search.png) no-repeat center right;
+}
+QLineEdit#searchEdit:focus {
+    color: black;
+    background: rgb(255, 255, 255);
+}
+
+/*tab*/
+QTabWidget::tab-bar {
+    height: 35px;
+    alignment: center;
+}
+QTabWidget#tabWidget QTabBar::tab {
+    width: 140px;
+    height: 35px;
+    background: rgba(255, 255, 255, 100);
+}
+/*第一个tab*/
+QTabWidget#tabWidget QTabBar::tab:first {
+    image: url(resources/icon_contacts_normal.png);
+}
+QTabWidget#tabWidget QTabBar::tab:first:hover {
+    image: url(resources/icon_contacts_hover.png);
+}
+QTabWidget#tabWidget QTabBar::tab:first:selected {
+    image: url(resources/icon_contacts_selected.png);
+}
+/*第二个tab*/
+QTabWidget#tabWidget QTabBar::tab:last {
+    image: url(resources/icon_last_normal.png);
+}
+QTabWidget#tabWidget QTabBar::tab:last:hover {
+    image: url(resources/icon_last_hover.png);
+}
+QTabWidget#tabWidget QTabBar::tab:last:selected {
+    image: url(resources/icon_last_selected.png);
+}
+
+/*分组背景100*/
+QTreeWidget#groupTreeWidget {
+    background: rgba(255, 255, 255, 0);
+}
+
+/*历史背景100*/
+QTreeWidget#historyTreeWidget {
+    background: rgba(255, 255, 255, 0);
+}
+
+QTreeWidget::branch {
+    image: none;
+}
+
+QTreeWidget::item:hover {
+    color: black;
+    background: rgba(255, 255, 255, 120);
+}
+
+QTreeWidget::item:selected {
+    color: black;
+    background: transparent;
+}
+
+QTreeWidget::item:selected:active {
+    background: transparent;
+}
+
+QWidget#childItem:hover {
+    background: rgba(253, 236, 170, 150);
+}
+
+QLabel#moodLabel {
+    color: gray
+}
+QWidget#tip {
+    image: url(resources/default/bg.jpg)
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    width: 11px;
+    margin: 0px 0px 0px 0px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+QScrollBar:vertical:hover {
+    background: rgba(0, 0, 0, 30);
+    border-radius: 5px;
+}
+
+/*min-height: 20px;*/
+QScrollBar::handle:vertical {
+    background: rgba(0, 0, 0, 50);
+    width: 11px;
+    border-radius: 5px;
+    border: none;
+}
+QScrollBar::handle:vertical:hover {
+    background: rgba(0, 0, 0, 100);
+}
+
+/*滚动的时候下面部分*/
+QScrollBar::add-page:vertical {
+    width: 11px;
+    background: transparent;
+}
+/*滚动的时候上面部分*/
+QScrollBar::sub-page:vertical {
+    width: 11px;
+    background: transparent;
+}
+
+/*顶部三角形*/
+QScrollBar::sub-line:vertical {
+    height: 12px;
+    width: 11px;
+    background: transparent;
+    subcontrol-position: top;
+}
+QScrollBar::up-arrow:vertical {
+    image: url(resources/ScrollBar/scrollbar_arrowup_normal.png);
+}
+QScrollBar::up-arrow:vertical:hover {
+    image: url(resources/ScrollBar/scrollbar_arrowup_down.png);
+}
+QScrollBar::up-arrow:vertical:pressed {
+    image: url(resources/ScrollBar/scrollbar_arrowup_highlight.png);
+}
+
+/*底部三角形*/
+QScrollBar::add-line:vertical {
+    height: 12px;
+    width: 11px;
+    background: transparent;
+    subcontrol-position: bottom;
+}
+QScrollBar::down-arrow:vertical {
+    image: url(resources/ScrollBar/scrollbar_arrowdown_normal.png);
+}
+QScrollBar::down-arrow:vertical:hover {
+    image: url(resources/ScrollBar/scrollbar_arrowdown_down.png);
+}
+QScrollBar::down-arrow:vertical:pressed {
+    image: url(resources/ScrollBar/scrollbar_arrowdown_highlight.png);
+}
